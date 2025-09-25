@@ -1,4 +1,4 @@
-// Componentes comunes para entrevistas de trabajo
+// Common components for professional development work
 
 export const Button = ({ children, variant = 'primary', size = 'md', onClick, disabled }) => {
   const baseClasses = 'font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2'
@@ -76,34 +76,34 @@ export const Input = ({ label, placeholder, type = 'text', error, ...props }) =>
   )
 }
 
-// Navbar responsive
+// Professional Navbar Component
 export const Navbar = () => {
   return (
     <nav className="bg-white shadow-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+          {/* Brand Logo */}
           <div className="flex-shrink-0 flex items-center">
             <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">T</span>
+              <span className="text-white font-bold text-sm">TC</span>
             </div>
-            <span className="ml-2 text-xl font-bold text-gray-900">TailwindApp</span>
+            <span className="ml-2 text-xl font-bold text-gray-900">TailwindComponents</span>
           </div>
           
-          {/* Desktop menu */}
+          {/* Navigation Menu */}
           <div className="hidden md:flex space-x-8">
             <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-              Inicio
+              Components
             </a>
             <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-              Productos
+              Utilities
             </a>
             <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-              Contacto
+              Resources
             </a>
           </div>
           
-          {/* Mobile menu button */}
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
